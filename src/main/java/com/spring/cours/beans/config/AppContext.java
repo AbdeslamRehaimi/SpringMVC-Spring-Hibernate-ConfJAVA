@@ -17,6 +17,7 @@ import java.util.Properties;
 @EnableTransactionManagement
 @PropertySource({"classpath:connection.properties"})
 public class AppContext {
+
     @Autowired
     private Environment environment;
 
@@ -24,10 +25,9 @@ public class AppContext {
     @Bean
     public BasicDataSource datasource(){
         BasicDataSource dataSource=new BasicDataSource();
-        dataSource.setDriverClassName(environment.getRequiredProperty("jdbc.driverClass"));
+        dataSource.setDriverClassName(environment.getRequiredProperty("jdbc.driverClassName"));
         dataSource.setUrl(environment.getRequiredProperty("jdbc.url"));
         dataSource.setUsername(environment.getRequiredProperty("jdbc.username"));
-        dataSource.setPassword(environment.getRequiredProperty("jdbc.password"));
         return dataSource;
     }
 
@@ -37,7 +37,7 @@ public class AppContext {
         LocalSessionFactoryBean sessionFactory=new LocalSessionFactoryBean();
         sessionFactory.setDataSource(datasource());
         sessionFactory.setPackagesToScan(new String[]{
-                "com.spring.cours.beans"
+                "com.spring.cours.beans.*"
         });
         sessionFactory.setHibernateProperties(hibernateProperties());
         return sessionFactory;

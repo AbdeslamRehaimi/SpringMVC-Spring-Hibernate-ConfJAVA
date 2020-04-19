@@ -1,8 +1,8 @@
 <%--
   Created by IntelliJ IDEA.
-  User: Abdeslam Rehaimi
-  Date: 06/04/2020
-  Time: 21:35
+  User: TOSHIBA
+  Date: 19/04/2020
+  Time: 18:50
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -32,7 +32,6 @@
     </style>
 </head>
 <body style="background-color: #000000d1;">
-
 <div class="container">
     <fieldset >
         <div style="text-align: center;">
@@ -49,11 +48,10 @@
 
         <div style="text-align: center;">
             <input  type="button" value="Begin Adventure"
-                   onclick="window.location.href='user/login'; return false;"
-                   class="btn btn-primary" />
+                    onclick="window.location.href='user/login'; return false;"
+                    class="btn btn-primary" />
         </div>
     </fieldset>
 </div>
-
 </body>
 </html>

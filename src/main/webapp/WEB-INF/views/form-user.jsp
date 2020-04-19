@@ -23,7 +23,7 @@
 
 
     <div class="row">
-        <div class="col-md-8 col-md-offset-2 ">
+        <div class="col-md-8 offset-2 ">
             <div >
                 <a style="float: left;" class="btn btn-danger" href="list" >Returne</a>
             </div>

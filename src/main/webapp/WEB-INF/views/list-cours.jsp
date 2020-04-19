@@ -41,8 +41,8 @@
             <fieldset >
                 <div style="text-align: center;">
                     <h1> <span style="color: #ffffff;">SpringMVC</span> CONF JAVA </h1>
+                    <hr />
                 </div>
-                <hr />
             </fieldset>
 
             <h4></h4>

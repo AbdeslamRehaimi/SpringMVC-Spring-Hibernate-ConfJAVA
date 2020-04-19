@@ -42,10 +42,11 @@
         </div>
         <div style="text-align: center;">
         <h4>${bnvnu} <em style="color: #1a909c">${nomcomplet} </em></h4>
+            <hr />
         </div>
     </fieldset>
      <div class="col-md-offset-1 col-md-10">
-        <hr />
+
 
         <input type="button" style="float: left;" value="Nouveau Utilisateur"
                onclick="window.location.href='new'; return false;"

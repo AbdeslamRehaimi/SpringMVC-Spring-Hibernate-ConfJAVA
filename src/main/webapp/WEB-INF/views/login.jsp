@@ -43,7 +43,7 @@
         <hr />
     </fieldset>
     <div class="row">
-        <div class="col-md-8 col-md-offset-2">
+        <div class="col-md-8 offset-2">
         <div >
             <br><br><br><br><br>
             <div class="card">
