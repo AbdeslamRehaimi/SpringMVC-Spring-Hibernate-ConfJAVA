@@ -44,7 +44,6 @@
                     <hr />
                 </div>
             </fieldset>
-
             <h4></h4>
             <input type="button" style="float: left;" value="Nouveau Cours"
                    onclick="window.location.href='new'; return false;"
