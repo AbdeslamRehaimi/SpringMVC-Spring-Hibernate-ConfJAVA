@@ -1,5 +1,5 @@
 # SpringMVC-Spring-Hibernate-ConfJAVA
-Gestion des utilisateur, et cours using Many To Many with Java Configuration
+Gestion des utilisateur, et cours using Many To Many  and One To Many Methodology with Java Configuration
 
  
 ## Screen Shots
