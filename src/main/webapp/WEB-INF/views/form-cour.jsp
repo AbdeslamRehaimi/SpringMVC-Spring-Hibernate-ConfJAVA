@@ -35,20 +35,20 @@
                         <form:hidden path="ID_C" />
                         <div class="form-group col-md-6 required ">
                             <label>Titre</label>
-                            <form:input path="titre" type="text" name="nom" placeholder="Titre*" class="form-control "></form:input>
+                            <form:input path="titre" type="text" name="nom" placeholder="Titre*" class="form-control is-invalid"></form:input>
                             <form:errors path="titre" class="invalid-feedback"  cssStyle="color: red" />
                         </div>
 
                         <div class="form-group col-md-6 required ">
                             <label>Auteur</label>
-                            <form:input path="auteur" type="text" name="auteur" placeholder="Auteur*"  class="form-control"></form:input>
+                            <form:input path="auteur" type="text" name="auteur" placeholder="Auteur*"  class="form-control is-invalid"></form:input>
                             <form:errors path="auteur"  class="invalid-feedback"  cssStyle="color: red"  />
                         </div>
 
 
                         <div class="form-group col-sm-12 required ">
                             <label>Module</label>
-                            <form:select path="module" name="module" class="form-control"  >
+                            <form:select path="module" name="module" class="form-control is-invalid"  >
                                 <form:option value="Unkown">------</form:option>
                                 <form:option value="JEE-Spring">JEE-Spring</form:option>
                                 <form:option value="Web">Web</form:option>
@@ -63,7 +63,7 @@
                         <div class="form-group col-sm-12 required ">
                             <label>Owner</label>
 
-                            <form:select path="utilisateurList"  class="form-control"  >
+                            <form:select path="utilisateurList"  class="form-control is-invalid"  >
                                      <form:options items="${utilisateur}" id="ID_U" itemValue="ID_U"  itemLabel="email" />
                              </form:select>
                             <form:errors path="utilisateurList"  class="invalid-feedback"  cssStyle="color: red" />

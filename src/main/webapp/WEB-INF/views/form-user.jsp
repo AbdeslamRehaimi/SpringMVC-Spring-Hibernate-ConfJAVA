@@ -35,27 +35,27 @@
                         <form:hidden path="ID_U" />
                         <div class="form-group col-md-6 required ">
                             <label>Nom</label>
-                            <form:input path="nom" type="text" name="nom" placeholder="Nom*" class="form-control "></form:input>
+                            <form:input path="nom" type="text" name="nom" placeholder="Nom*" class="form-control is-invalid"></form:input>
                             <form:errors path="nom" class="invalid-feedback"  cssStyle="color: red" />
                         </div>
 
                         <div class="form-group col-md-6 required ">
                             <label>Prenom</label>
-                            <form:input path="prenom" type="text" name="prenom" placeholder="Prenom*"  class="form-control"></form:input>
+                            <form:input path="prenom" type="text" name="prenom" placeholder="Prenom*"  class="form-control is-invalid"></form:input>
                             <form:errors path="prenom"  class="invalid-feedback"  cssStyle="color: red"  />
                         </div>
 
 
                         <div class="form-group col-sm-12 required ">
                             <label>Email</label>
-                            <form:input path="email" type="text" name="email" placeholder="Email*" class="form-control"></form:input>
+                            <form:input path="email" type="text" name="email" placeholder="Email*" class="form-control is-invalid"></form:input>
                             <form:errors path="email"  class="invalid-feedback"  cssStyle="color: red"  />
                         </div>
 
 
                         <div class="form-group col-md-6 required ">
                             <label>Mot de pass</label>
-                            <form:input path="password" type="password" name="motdepasse" placeholder="Password*" autocomplete="off" class="form-control"></form:input>
+                            <form:input path="password" type="password" name="motdepasse" placeholder="Password*" autocomplete="off" class="form-control is-invalid"></form:input>
                             <form:errors path="password"  class="invalid-feedback"  cssStyle="color: red"  />
                         </div>
 
@@ -68,7 +68,7 @@
 
                         <div class="form-group col-sm-12">
                             <label>Role</label>
-                            <form:select path="identiter" name="admin" class="form-control"  >
+                            <form:select path="identiter" name="admin" class="form-control is-invalid"  >
                                 <form:option value="Unkown">------</form:option>
                                 <form:option value="Etudiant">Etudiant</form:option>
                                 <form:option value="Professeur">Professeur</form:option>
